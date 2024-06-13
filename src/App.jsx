@@ -1,7 +1,7 @@
 
 import './App.css'
 
-import Profile from './components/Profile/Profile';
+import Profile from './components/profile/Profile';
 import userData from './userData.json'
 
 
