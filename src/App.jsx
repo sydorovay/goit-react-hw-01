@@ -1,13 +1,15 @@
 
-import './App.css'
+import './App.css';
+import FriendList from './components/friendList/FriendList';
+import Profile from './components/friendListItem/Profile';
+import userData from './data/userData.json';
+import friends from './data/friends.json'
 
-import Profile from './components/profile/Profile';
-import userData from './userData.json'
 
 
 export default function App() {
   return (
-     <>
+    <>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -15,7 +17,9 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends}/>
     </>
+
   );
 }
 
