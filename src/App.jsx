@@ -1,28 +1,28 @@
 
-import './App.css';
-import FriendList from './components/friendList/FriendList';
-import Profile from './components/friendListItem/Profile';
-import userData from './data/userData.json';
-import friends from './data/friends.json'
+import Profile from "./components/Profile/Profile";
+import FriendList from "./components/FriendList/FriendList";
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
-import transactions from './data/transactions.json'
 
+import userData from './data/userData.json';
+import friendsData from './data/friends.json';
+import transactionsData from './data/transactions.json';
+import styles from './App.module.css'
 
 export default function App() {
+  const { username, tag, location, avatar, stats } = userData;
+
   return (
-    <>
+    <div className={styles.App}>
       <Profile
-        name={userData.username}
-        tag={userData.tag}
-        location={userData.location}
-        image={userData.avatar}
-        stats={userData.stats}
+        name={username}
+        tag={tag}
+        location={location}
+        image={avatar}
+        stats={stats}
       />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
-    </>
-
+      <FriendList friends={friendsData} />
+      <TransactionHistory items={transactionsData} />
+    </div>
   );
-}
-
+} 
 

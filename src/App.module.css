@@ -1,0 +1,19 @@
+#root {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  text-align: center;
+}
+li {
+    list-style: none;
+}
+.App{
+  border: 3px solid;
+margin: 0 auto;
+text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}

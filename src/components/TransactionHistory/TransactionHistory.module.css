@@ -1,0 +1,6 @@
+.transactionHistory {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  border: 2px solid brown;
+}

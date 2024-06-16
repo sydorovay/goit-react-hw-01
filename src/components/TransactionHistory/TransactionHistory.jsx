@@ -1,7 +1,10 @@
+import styles from './TransactionHistory.module.css'
 
 const TransactionHistory = ({ items }) => {
+
   return (
-    <table className="transaction-history">
+   <div className={styles.TransactionHistory}>
+    <table >
       <thead>
         <tr>
           <th>Type</th>
@@ -18,8 +21,9 @@ const TransactionHistory = ({ items }) => {
           </tr>
         ))}
       </tbody>
-    </table>
+      </table>
+      </div>
   );
 };
 
-export default TransactionHistory
+export default TransactionHistory;
