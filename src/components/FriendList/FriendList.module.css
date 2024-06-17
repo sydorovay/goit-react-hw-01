@@ -1,6 +1,6 @@
 .friendlist {
   display: flex;
-justify-content: space-around;
-border: 2px solid;
+justify-content:center;
 padding: 30px;
 }
+
