@@ -1,32 +1,32 @@
 .profile {
   text-align: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .image {
-  width: 50%;
+  width: 40%;
   border-radius: 100%;
   background-color: #2A2A2A;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .statClass {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 20px 0 0 0;
   background-color: #D3D3D3;
   border-top: 2px solid;
-  border-bottom: 2px solid;
-  justify-content:center;;
-  text-align: center;
+  border-bottom: 2px solid
 }
 
 .statItem {
   display: flex;
   flex-direction: column;
   background: #D3D3D3;
-  align-items: center;
+  padding: 10%;
   border-right: 2px solid;
-  padding: 10px;
 }
 
 .statItem:last-child {
