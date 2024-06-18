@@ -1,6 +1,5 @@
-
 import Profile from './components/Profile/Profile';
-import FriendList from '../src/components/FriendList/FriendList';
+import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 import userData from './data/userData.json';
@@ -24,5 +23,4 @@ export default function App() {
       <TransactionHistory items={transactionsData} />
     </div>
   );
-} 
-
+}
