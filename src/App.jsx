@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div className={styles.App}>
       <Profile
-        name={username}
+        username={username}  // виправлено на username
         tag={tag}
         location={location}
         image={avatar}
