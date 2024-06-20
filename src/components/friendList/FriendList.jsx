@@ -14,7 +14,7 @@ const FriendList = ({ friends }) => {
           isOnline={friend.isOnline}
           className={friendListItem}
         />
-      ))}
+      ))} 
     </ul>
   );
 };
