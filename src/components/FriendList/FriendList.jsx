@@ -19,4 +19,4 @@ const FriendList = ({ friends }) => {
   );
 };
 
-export default FriendList;newFriendList
+export default FriendList;
