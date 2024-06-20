@@ -37,3 +37,8 @@
 .statItem span:first-child {
   font-weight: bold;
 }
+.tag {
+  color: #777;
+ font-size: 30px;
+ margin-bottom: 15px;
+}

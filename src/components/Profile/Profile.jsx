@@ -1,13 +1,13 @@
 import styles from './Profile.module.css';
 
 const Profile = ({ username, tag, location, image, stats }) => {
-  const { profile, image: imgClass, username: userClass, tag: tagClass, location: locClass, statClass: statsClass, statItem: statItem } = styles;
+  const { profile, image: imgClass, userName, tag: tagClass, location: locClass, statClass: statsClass, statItem } = styles;
 
   return (
     <div className={profile}>
       <div>
         <img className={imgClass} src={image} alt={username} />
-        <p className={userClass}>{username}</p>
+        <p className={userName}>{username}</p>
         <p className={tagClass}>@{tag}</p>
         <p className={locClass}>{location}</p>
       </div>
