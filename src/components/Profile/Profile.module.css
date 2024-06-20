@@ -24,15 +24,16 @@
 
 .location {
   color: #808080;
+  margin-bottom: 15px;
 }
+
 
 .stats {
   display: flex;
   justify-content: space-between;
- 
   text-align: center;
   list-style: none;
-  margin: 20px 0 0 0;
+margin-bottom: 15px;
   background-color: #D3D3D3;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
@@ -41,10 +42,13 @@
 }
 
 .statItem {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   background: #D3D3D3;
   padding: 10px;
   border-right: 2px solid #000000;
+
 }
 
 .statItem:last-child {
