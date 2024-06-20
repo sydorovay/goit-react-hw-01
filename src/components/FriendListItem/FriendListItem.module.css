@@ -24,5 +24,8 @@
 }
 
 .offline {
-  color: red;
+  color: red;}
+
+.item:last-child {
+  margin-right: 0;
 }
