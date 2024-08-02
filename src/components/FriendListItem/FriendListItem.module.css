@@ -7,6 +7,7 @@
   border: 2px solid;
   border-radius: 5px;
   margin-right: 20px;
+    border-color: aquamarine;
 }
 
 .avatar {
@@ -21,6 +22,7 @@
 
 .online {
   color: green;
+;
 }
 
 .offline {
