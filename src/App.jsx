@@ -1,26 +1,34 @@
-import Profile from './components/Profile/Profile';
-import FriendList from './components/FriendList/FriendList';
-import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import { useState } from "react";
 
-import userData from './data/userData.json';
-import friendsData from './data/friends.json';
-import transactionsData from './data/transactions.json';
-import styles from './App.module.css';
-
-export default function App() {
-  const { username, tag, location, avatar, stats } = userData;
+const App = () => {
+  const [items, setItems] = useState([]);
+  const [inputValue, setInputValue] = useState('');
+  
+  const handleClick = () => {
+    if (inputValue.trim() !== "") {
+      setItems([...items, inputValue]);
+      setInputValue('');
+    } 
+  }
 
   return (
-    <div className={styles.App}>
-      <Profile
-        username={username}  // виправлено на username
-        tag={tag}
-        location={location}
-        image={avatar}
-        stats={stats}
-      />
-      <FriendList friends={friendsData} />
-      <TransactionHistory items={transactionsData} />
+    <div>
+      <p>You typed: {inputValue}</p>
+      <input
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        placeholder="YOoHOoo.."
+        >
+      </input>
+      <button onClick={handleClick}>mahma</button>
+      <ul>
+        {items.map((item , index) => (
+          <li key={index}> {item} </li>
+        ))}
+      </ul>
     </div>
-  );
+      )
 }
+
+export default App
